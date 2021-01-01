@@ -1,0 +1,46 @@
+<%= image_tag(url_for(item.featured_image), width: '100%') if item.featured_image.attached? %>
+
+<h3 class='mt-3 text-bold'><%= item.name %></h3>
+<p><%= number_to_currency(item.price) %></p>
+<p><%= item.description %></p>
+
+<% if item.ingredients.present? %>
+  <p>
+    <strong>Ingredients</strong><br/>
+    <%= item.ingredients %>
+  </p>
+<% end %>
+
+<% if item.extra_info.present? %>
+  <p>
+    <strong>Extra Info</strong></br>
+    <i><%= item.extra_info %></i>
+  </p>
+<% end %>
+
+<% if item.show_nutritional_facts %>
+  <hr/>
+
+  <strong>Nutritional Facts</strong><br/>
+
+  <p class='mt-1'>Calories: <%= item.calories %> Cal</p>
+  <% if item.carbs.present? %>
+    <p>Carbs: <%= item.carbs %> G</p>
+  <% end %>
+
+  <% if item.protein.present? %>
+    <p>Protein: <%= item.protein %> G</p>
+  <% end %>
+
+  <% if item.sodium.present? %>
+    <p>Sodium: <%= item.sodium %> Mg</p>
+  <% end %>
+
+  <% if item.fat.present? %>
+    <p>Fat: <%= item.fat %> G</p>
+  <% end %>
+
+  <% if item.cholesterol.present? %>
+    <p>Cholesterol: <%= item.cholesterol %> Mg</p>
+  <% end %>
+<% end %>

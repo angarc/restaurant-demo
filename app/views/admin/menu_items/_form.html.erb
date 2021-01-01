@@ -1,0 +1,26 @@
+
+<% if action_name == 'edit' %>
+  <%= image_tag(url_for(@item.featured_image), width: '300px', class: 'mb-3') if f.object.featured_image.attached? %>
+<% end %>
+<%= f.input :featured_image %>
+
+<%= f.input :name, required: true %>
+
+<%= f.input :price, required: true %>
+
+<%= f.input :description %>
+
+<%= f.input :extra_info, placeholder: 'buy 2 and get the 3rd one free!' %>
+
+<%= f.input :ingredients, hint: 'Provide ingredients for food allergy concerns', placeholder: 'This product contains dairy and nuts' %>
+
+<hr/>
+
+<%= f.input :show_nutritional_facts %>
+
+<%= f.input :calories %>
+<%= f.input :carbs %>
+<%= f.input :protein %>
+<%= f.input :fat %>
+<%= f.input :sodium %>
+<%= f.input :cholesterol %>

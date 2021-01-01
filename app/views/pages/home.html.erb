@@ -1,0 +1,244 @@
+<nav id='navbar' class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class='container'>
+    <a class="navbar-brand" href="#">Joe's</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Specials</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary my-2 my-sm-0">Order Online</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class='header' style=''>
+  <div class='container'>
+    <h1 class='header__title'><span class='header__title-span'>Joe's</span> Restaurant</h1>
+    <p class='header__lead'>27638 Stony Brook Rd Suite 2 | (915) 999-9999</p>
+
+    <div class='mt-5'>
+      <%= link_to "Checkout Today's Specials", '#specials', class: 'header__button' %>
+    </div>
+  </div>  
+</header>
+
+<section class='specials'>
+  <div class='container'>
+    <h2 class='section-title'>Monday's Specials</h2>
+    <div class='row'>
+      <div class='col-lg-4 u-center-in-col'>
+        <div class='specials__special'>
+          <%= image_tag 'https://images.unsplash.com/photo-1606851094291-6efae152bb87?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80', width: '100%', class: 'specials__special-image' %>
+        </div>
+      </div>
+      <div class='col-lg-8 u-center-in-col'>
+        <div class='specials__special'>
+          <h3 class='specials__special-title'>Cashew Chicken With Stir-Fry Vegetables & Green Salad</h3>
+          <span class='specials__special-description'>Cashew Chicken With Stir-Fry Vegetables served with green salad, sprouts and stewed mushrooms.</span>
+          <div class='specials__special-tags mt-2 mb-2'>
+            <span class='badge badge-secondary'>Vegan</span>
+            <span class='badge badge-secondary'>Healthy</span>
+            <span class='badge badge-secondary'>Healthy</span>
+          </div>
+          <span class='specials__special-price'>$22</span>
+        </div>
+      </div>
+
+      <div class='col-lg-4 u-center-in-col'>
+        <div class='specials__special'>
+          <%= image_tag 'https://images.unsplash.com/photo-1606851094291-6efae152bb87?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80', width: '100%', class: 'specials__special-image' %>
+        </div>
+      </div>
+      <div class='col-lg-8 u-center-in-col'>
+        <div class='specials__special'>
+          <h3 class='specials__special-title'>Cashew Chicken With Stir-Fry Vegetables & Green Salad</h3>
+          <span class='specials__special-description'>Cashew Chicken With Stir-Fry Vegetables served with green salad, sprouts and stewed mushrooms.</span>
+          <div class='specials__special-tags mt-2 mb-2'>
+            <span class='badge badge-secondary'>Vegan</span>
+            <span class='badge badge-secondary'>Healthy</span>
+            <span class='badge badge-secondary'>Healthy</span>
+          </div>
+          <span class='specials__special-price'>$22</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='offer'>
+  <div class='container'>
+    <h2 class='section-title text-white'>What We Offer</h2>
+    <div class='row offer__offerings'>
+      <div class='col-lg-3'>
+        <div class='offer__offerings-item'>
+          <%= image_tag 'https://images.unsplash.com/photo-1604808621558-b09365436e51?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80', width: '80%', class:'offer__offerings-item-image' %>
+          <h2 class='offer__offerings-item-title'>Study Spots</h2>
+          <p class='offer__offerings-item-description'>
+            Coffice in Stockholm is a great place to work from. Food options beyond pastries. Free WiFi.
+          </p>
+        </div>
+      </div>
+
+      <div class='col-lg-3'>
+        <div class='offer__offerings-item'>
+          <%= image_tag 'https://images.unsplash.com/photo-1604808621558-b09365436e51?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80', width: '80%', class:'offer__offerings-item-image' %>
+          <h2 class='offer__offerings-item-title'>Breakfast</h2>
+          <p class='offer__offerings-item-description'>
+            Coffice in Stockholm is a great place to work from. Food options beyond pastries. Free WiFi.
+          </p>
+        </div>
+      </div>
+
+      <div class='col-lg-3'>
+        <div class='offer__offerings-item'>
+          <%= image_tag 'https://images.unsplash.com/photo-1604808621558-b09365436e51?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80', width: '80%', class:'offer__offerings-item-image' %>
+          <h2 class='offer__offerings-item-title'>Meats</h2>
+          <p class='offer__offerings-item-description'>
+            Coffice in Stockholm is a great place to work from. Food options beyond pastries. Free WiFi.
+          </p>
+        </div>
+      </div>
+
+      <div class='col-lg-3'>
+        <div class='offer__offerings-item'>
+          <%= image_tag 'https://images.unsplash.com/photo-1604808621558-b09365436e51?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80', width: '80%', class:'offer__offerings-item-image' %>
+          <h2 class='offer__offerings-item-title'>Vegan</h2>
+          <p class='offer__offerings-item-description'>
+            Coffice in Stockholm is a great place to work from. Food options beyond pastries. Free WiFi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>    
+</section>
+
+<section class='menu'>
+  <div class='container'>
+    <h2 class='section-title'>Menu</h2>
+    <p>Click menu item for more info</p>
+    <div class="card-columns">
+
+      <% @menu_item_categories.each do |category| %>
+        <div class="card menu__card">
+          <div class="card-body">
+            <h3 class="menu__card-title text-primary"><%= category.name %></h3>
+            <ul class='menu__card__items'>
+
+              <% category.menu_items.each do |item| %>
+                <li class='menu__card__items-item'>
+                  <h4 class='menu__card__items-item-title'><%= link_to item.name, menu_item_path(item), remote: true %></h4>
+                  <span class='menu__card__items-item-price'><%= number_to_currency(item.price) %></span>
+                </li>
+              <% end %>
+
+            </ul>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</section>
+
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Menu Item</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div id='modal-body' class="modal-body">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class='footer'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-4'>
+        <p><%= link_to 'Privacy Policy', '' %></p>
+        <p><%= link_to 'Terms of Service', '' %></p>
+      </div>
+
+      <div class='col-lg-4'>
+        <p><%= link_to 'About Us', '' %></p>
+      </div>
+
+      <div class='col-lg-4'>
+        <h3 class='text-primary'>Reach Out To Us</h3>
+        <form class='mt-3'>
+          <div class='form-group'>
+            <input class='form-control' placeholder='Email Address'/>
+          </div>
+
+          <div class='form-group'>
+            <textarea class='form-control' placeholder='Message'></textarea>
+          </div>
+
+          <div class='form-group'>
+            <input type='submit' class='btn btn-primary' value='Submit'/>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <p>Copyright &copy; <%= Time.now.year %> | Joe's Restaurant</p>
+  </div>
+</footer>
+
+<script>
+$(function() {
+  var lightNavbar = false; 
+
+  changeNavbarIfNecessary()
+  window.onscroll = function (e) {  
+    changeNavbarIfNecessary()
+  }
+
+  function changeNavbarIfNecessary() {
+    var $nav = $('#navbar');
+    if ($(window).scrollTop() >= 80) {
+      changeToDarkNavbar($nav)
+    } else {
+      changeToLightNavbar($nav)
+    }
+  }
+
+  function changeToLightNavbar(nav) {
+    if (lightNavbar) {
+      nav.removeClass();
+      nav.addClass('navbar navbar-expand-lg navbar-dark fixed-top');
+    }
+    lightNavbar = false;
+  }
+
+  function changeToDarkNavbar(nav) {
+    if (!lightNavbar) {
+      nav.removeClass();
+      nav.addClass('navbar navbar-expand-lg navbar-light fixed-top bg-light');
+    }
+    lightNavbar = true;
+  }
+})
+</script>

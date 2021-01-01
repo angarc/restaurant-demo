@@ -1,0 +1,13 @@
+<h1 class='page-title'><%= @item.name %></h1>
+
+<%= link_to 'Back to all Menu Items', admin_menu_item_category_menu_items_path(@menu_item_category) %> | 
+<%= link_to 'Edit Menu Item', edit_admin_menu_item_category_menu_item_path(@menu_item_category, @item) %>
+
+<hr/>
+
+<strong>Image: </strong><br/>
+<%= image_tag(url_for(@item.featured_image), width: '300px', class: 'mb-3') if @item.featured_image.attached? %>
+
+
+<p><strong>Price: </strong><%= number_to_currency(@item.price) %></p>
+<p><strong>Description: </strong><%= @item.description %></p>

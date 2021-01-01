@@ -1,0 +1,11 @@
+<h1 class='page-title'>Menu Item Categories</h1>
+<%= link_to 'Add New Category', new_admin_menu_item_category_path %>
+<hr/>
+
+<ul class='list-group'>
+  <% @categories.each do |category| %>
+    <li class='list-group-item'>
+      <strong><%= link_to category.name, admin_menu_item_category_menu_items_path(category) %></strong>
+    </li>
+  <% end %>
+</ul>

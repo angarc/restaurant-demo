@@ -1,0 +1,6 @@
+<h1 class='page-title'>New Menu Item Category</h1>
+
+<%= simple_form_for @menu_item_category, url: admin_menu_item_categories_path do |f| %>
+  <%= render 'form', f: f %>
+  <%= f.submit 'Create New Category', class: 'btn btn-primary' %>
+<% end %>
